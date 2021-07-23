@@ -78,7 +78,7 @@ bzl_library(
 bzl_library(
     name = "container.docs",
     srcs = ["container.docs.bzl"],
-    deps = ["container"],
+    deps = [":container"],
 )
 
 bzl_library(
@@ -103,6 +103,7 @@ bzl_library(
         "//skylib:path",
         "@bazel_skylib//lib:dicts",
         "@bazel_tools//tools/build_defs/hash:hash.bzl",
+        "//internal:execution_bzl",
     ],
 )
 
