@@ -38,7 +38,6 @@ def go_deps():
         go_repository(
             name = "com_github_google_go_containerregistry",
             urls = ["https://api.github.com/repos/google/go-containerregistry/tarball/c061b3f39cff652d18f95ee23ebfd39cb3f5ee89"],  # v0.5.1
-            sha256 = "742b8a99f43800ec2e7e6d6c5bf04b7ac3887af597ac85986c84aed37b160ebf",
             importpath = "github.com/google/go-containerregistry",
             strip_prefix = "google-go-containerregistry-c061b3f",
             type = "tar.gz",
